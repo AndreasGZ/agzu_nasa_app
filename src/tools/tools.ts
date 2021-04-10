@@ -27,12 +27,12 @@ export const getInitialInterval = (): string[] => {
 
   const thirdyDaysbeforeYesterdayDateObj = {
     year: `${thirdyDaysbeforeYesterdayDate.getFullYear()}`,
-    month: `${thirdyDaysbeforeYesterdayDate.getMonth()}`,
+    month: `${thirdyDaysbeforeYesterdayDate.getMonth() + 1}`,
     day: `${thirdyDaysbeforeYesterdayDate.getDate()}`
   };
   const yesterdayObj = {
     year: `${yesterday.getFullYear()}`,
-    month: `${yesterday.getMonth()}`,
+    month: `${yesterday.getMonth() + 1}`,
     day: `${yesterday.getDate()}`
   };
   //Daten formattieren
