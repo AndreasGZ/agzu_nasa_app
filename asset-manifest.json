@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/agzu_nasa_app/static/css/main.fe696650.chunk.css",
+    "main.js": "/agzu_nasa_app/static/js/main.32f76122.chunk.js",
+    "main.js.map": "/agzu_nasa_app/static/js/main.32f76122.chunk.js.map",
+    "runtime-main.js": "/agzu_nasa_app/static/js/runtime-main.7f032277.js",
+    "runtime-main.js.map": "/agzu_nasa_app/static/js/runtime-main.7f032277.js.map",
+    "static/css/2.3115cb15.chunk.css": "/agzu_nasa_app/static/css/2.3115cb15.chunk.css",
+    "static/js/2.ca4c43b8.chunk.js": "/agzu_nasa_app/static/js/2.ca4c43b8.chunk.js",
+    "static/js/2.ca4c43b8.chunk.js.map": "/agzu_nasa_app/static/js/2.ca4c43b8.chunk.js.map",
+    "static/js/3.5f991a9f.chunk.js": "/agzu_nasa_app/static/js/3.5f991a9f.chunk.js",
+    "static/js/3.5f991a9f.chunk.js.map": "/agzu_nasa_app/static/js/3.5f991a9f.chunk.js.map",
+    "index.html": "/agzu_nasa_app/index.html",
+    "static/css/2.3115cb15.chunk.css.map": "/agzu_nasa_app/static/css/2.3115cb15.chunk.css.map",
+    "static/css/main.fe696650.chunk.css.map": "/agzu_nasa_app/static/css/main.fe696650.chunk.css.map",
+    "static/js/2.ca4c43b8.chunk.js.LICENSE.txt": "/agzu_nasa_app/static/js/2.ca4c43b8.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/agzu_nasa_app/static/media/outline-icons.ddae9b1b.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7f032277.js",
+    "static/css/2.3115cb15.chunk.css",
+    "static/js/2.ca4c43b8.chunk.js",
+    "static/css/main.fe696650.chunk.css",
+    "static/js/main.32f76122.chunk.js"
+  ]
+}
