@@ -43,7 +43,7 @@ export function useGetData(): {
       // console.log("get Data")
       const apiNames: string[] = ["apod", "epic", "epicAll", "techport"];
       apiNames.forEach((name: string) => {
-        fetch(`/${name}`)
+        fetch(`https://nasa-agzu.herokuapp.com/${name}`)
           .then(response => response.json())
           .then(
             res => {

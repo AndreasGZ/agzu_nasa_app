@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 // Fetching tools
 export function fetchPost(path: string, data: any): Promise<any> {
-  return fetch(path, {
+  return fetch(`https://nasa-agzu.herokuapp.com${path}`, {
     method: "POST",
     headers: {
       'Content-Type': 'application/json'
@@ -22,13 +22,13 @@ export const getInitialInterval = (): string[] => {
   const currentTime = currentDate.getTime();
   const oneDay = (24 * 60 * 60 * 1000);
   const yesterday = new Date(currentTime - oneDay);
-  const hundredDays = (100 * 24 * 60 * 60 * 1000);
-  const hundredDaysbeforeYesterdayDate = new Date(currentTime - hundredDays);
+  const thirdyDays = (30 * 24 * 60 * 60 * 1000);
+  const thirdyDaysbeforeYesterdayDate = new Date(currentTime - thirdyDays);
 
-  const hundredDaysbeforeYesterdayDateObj = {
-    year: `${hundredDaysbeforeYesterdayDate.getFullYear()}`,
-    month: `${hundredDaysbeforeYesterdayDate.getMonth()}`,
-    day: `${hundredDaysbeforeYesterdayDate.getDate()}`
+  const thirdyDaysbeforeYesterdayDateObj = {
+    year: `${thirdyDaysbeforeYesterdayDate.getFullYear()}`,
+    month: `${thirdyDaysbeforeYesterdayDate.getMonth()}`,
+    day: `${thirdyDaysbeforeYesterdayDate.getDate()}`
   };
   const yesterdayObj = {
     year: `${yesterday.getFullYear()}`,
@@ -38,14 +38,14 @@ export const getInitialInterval = (): string[] => {
   //Daten formattieren
   if (Number(yesterdayObj.month) < 10) yesterdayObj.month = `0${yesterdayObj.month}`;
   if (Number(yesterdayObj.day) < 10) yesterdayObj.day = `0${yesterdayObj.day}`;
-  if (Number(hundredDaysbeforeYesterdayDateObj.month) < 10)
-    hundredDaysbeforeYesterdayDateObj.month = `0${hundredDaysbeforeYesterdayDateObj.month}`;
-  if (Number(hundredDaysbeforeYesterdayDateObj.day) < 10)
-    hundredDaysbeforeYesterdayDateObj.day = `0${hundredDaysbeforeYesterdayDateObj.day}`;
+  if (Number(thirdyDaysbeforeYesterdayDateObj.month) < 10)
+    thirdyDaysbeforeYesterdayDateObj.month = `0${thirdyDaysbeforeYesterdayDateObj.month}`;
+  if (Number(thirdyDaysbeforeYesterdayDateObj.day) < 10)
+    thirdyDaysbeforeYesterdayDateObj.day = `0${thirdyDaysbeforeYesterdayDateObj.day}`;
 
   const yesterdayString = `${yesterdayObj.year}-${yesterdayObj.month}-${yesterdayObj.day}`;
-  const hundredDaysbeforeYesterdayDateString =
-    `${hundredDaysbeforeYesterdayDateObj.year}-${hundredDaysbeforeYesterdayDateObj.month}-${hundredDaysbeforeYesterdayDateObj.day}`;
+  const thirdyDaysbeforeYesterdayDateString =
+    `${thirdyDaysbeforeYesterdayDateObj.year}-${thirdyDaysbeforeYesterdayDateObj.month}-${thirdyDaysbeforeYesterdayDateObj.day}`;
 
-  return [yesterdayString, hundredDaysbeforeYesterdayDateString];
+  return [yesterdayString, thirdyDaysbeforeYesterdayDateString];
 }
