@@ -1,0 +1,103 @@
+@import'~semantic-ui-css/semantic.css';
+
+.backgroundImageCard{
+  width: 100% !important;
+  height: 350px !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.epicBackground{
+  width: 100% !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100% !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.preload{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+.marginBottom{
+  margin-bottom: 15px !important;
+}
+
+.searchResults{
+  width: 200px;
+  height: 300px;
+  overflow-y: scroll;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.epicResults{
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 100;
+  font-size: 15px;
+  background-color: white;
+}
+
+.resultItem{
+  cursor: pointer;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.epicResult{
+  border: none;
+  background-color: white;
+  width: 100%;
+  padding: 3px 0;
+}
+
+.resultItem:hover{
+  background-color: lightgray;
+  text-decoration: none;
+  color: black;
+}
+
+.opacity1{
+  width: 50%;
+  padding-top: 100%;
+  float: left;
+  opacity: 1;
+}
+
+.positionStart{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.positionEnd{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.varWidth{
+  width: 210px !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 5px !important;
+}
+
+.relative{
+  position: relative !important;
+}
+
+.blockSpan{
+  display: block !important;
+}
